@@ -1,0 +1,163 @@
+.container {
+    width: 100%;
+}
+
+body {
+    margin: 33px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*color: #334680;*/
+    /*color: #36477c;*/
+    color:  #092da1;
+}
+
+h1 {
+    color: #072585;
+}
+
+hr {
+    opacity: 0.1;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*------------------------------------ LEFT CONTENT ----------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+.left {
+    width: 24%;
+    display: inline-block;
+    padding-right: 4rem;
+    margin-top: 2%;
+}
+
+.left_top_content {
+    text-align: center;
+}
+
+.profile_image {
+    text-align: center;
+}
+
+.profile {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.name {
+    text-align: center;
+    line-height: 1;
+}
+
+.name p {
+    font-size: 1.3rem;
+}
+
+.left_middle_content {
+    margin-top: 4rem;
+}
+
+ul {
+    padding-inline-start: 15px;
+}
+
+.left_middle_content ul li {
+    list-style-type: none;
+    padding: 0.5rem 0rem;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.left_middle_content ul li i {
+    font-size: 13px;
+    width: 3.5rem;
+    text-align: center;
+    color: #b9bccd;
+}
+
+.download_button {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 15px 30px;
+    background-color: #377cfe;
+    color: white;
+    font-weight: bold;
+    margin-top: 15%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+
+/*------------------------------------------------------------------------------------------------*/
+/*------------------------------------ RIGHT CONTENT ---------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+.right {
+    width: 60%;
+    display: inline-block;
+    position: absolute;
+    padding-bottom: 50px;
+}
+
+.right_top_content p {
+    /* color: #6577b1; */
+    color: #092da1;
+    line-height: 1.5;
+    font-size: 17px;
+    text-align: justify;
+    font-weight: 500;
+    padding: 5px 0px;
+}
+
+.right_middle_content, .right_bottom_content {
+    margin-top: 4rem;
+}
+
+.experience, .education {
+    padding: 1% 0% 2% 0%;
+}
+
+.experience span {
+    display: inline-block;
+}
+
+.role {
+    font-size: 1.4rem;
+}
+
+.full_time {
+    background-color: #d7ffe0;
+    padding: 6px 20px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    float: right;
+}
+
+.period {
+    float: right;
+}
+
+.work {
+    padding: 5px 0px;
+}
+
+.location span {
+    color: #b9bccd;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.company, .place {
+    width: 14%;
+}
+
+.institute {
+    color: #b9bccd;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.right_middle_content i {
+    width: 1.1rem;
+}
+
+.icon i, .period i {
+    width: 1.5rem;
+}
