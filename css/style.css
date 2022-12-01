@@ -1,0 +1,240 @@
+.container {
+    width: 100%;
+    color: #092da1;
+    margin-left: 2%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+    color: #072585;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*------------------------------------ LEFT CONTENT ----------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+.container .left-container {
+    width: 22%;
+    display: inline-block;
+    padding-right: 4rem;
+    margin-top: 2%;
+}
+
+.container .left-container .left-top-content {
+    text-align: center;
+}
+
+.container .left-container .left-top-content .profile-image {
+    text-align: center;
+}
+
+.container .left-container .left-top-content .profile-image .profile {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.container .left-container .left-top-content .name {
+    line-height: 1;
+}
+
+.container .left-container .left-top-content .name .role {
+    font-size: 1.3rem;
+}
+
+.container .left-container .left-middle-content {
+    margin-top: 4rem;
+}
+
+.container .left-container .left-middle-content ul {
+    padding-inline-start: 15px;
+}
+
+.container .left-container .left-middle-content ul li {
+    list-style-type: none;
+    padding: 1rem 0rem;
+    font-weight: bold;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(61, 61, 65, 0.075);
+    border-bottom-width: thin;
+}
+
+.container .left-container .left-middle-content ul li:last-child {
+    border-bottom: none;
+}
+
+.container .left-container .left-middle-content ul li i {
+    font-size: 13px;
+    width: 2.5rem;
+    text-align: center;
+    color: #b9bccd;
+}
+
+.container .left-container .left-bottom-content .download-button {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 15px 30px;
+    background-color: #377cfe;
+    color: white;
+    font-weight: bold;
+    margin-top: 15%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+
+/*------------------------------------------------------------------------------------------------*/
+/*------------------------------------ RIGHT CONTENT ---------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+.container .right-container {
+    width: 65%;
+    display: inline-block;
+    position: absolute;
+    padding-bottom: 50px;
+}
+
+.container .right-container .right-top-content .objective {
+    color: #092da1;
+    line-height: 1.5;
+    font-size: 17px;
+    text-align: justify;
+    font-weight: 500;
+    padding: 5px 0px;
+}
+
+.container .right-container .right-middle-content,
+.container .right-container .right-bottom-content {
+    margin-top: 4rem;
+}
+
+.container .right-container .right-middle-content .experience,
+.container .right-container .right-bottom-content .education {
+    padding: 1% 0% 2% 0%;
+    border-bottom: 1px solid rgba(61, 61, 65, 0.075);
+    border-bottom-width: thin;
+}
+
+.container .right-container .right-middle-content .experience .work .role,
+.container .right-container .right-bottom-content .education .graduation .degree {
+    font-size: 1.4rem;
+}
+
+.container .right-container .right-middle-content .experience .location .period,
+.container .right-container .right-bottom-content .education .institute .period {
+    width: 59%;
+    text-align: right;
+}
+
+.container .right-container .right-middle-content .experience .location .period p,
+.container .right-container .right-bottom-content .education .institute .period p {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.container .right-container .right-middle-content .experience .work div,
+.container .right-container .right-bottom-content .education .institute div {
+    display: inline-block;
+}
+
+.container .right-container .right-middle-content .experience .location .company,
+.container .right-container .right-middle-content .experience .location .place {
+    width: 20%;
+}
+
+.container .right-container .right-middle-content .experience .work .full-time {
+    width: 51.5%;
+    text-align: right;
+}
+
+.container .right-container .right-middle-content .experience .work .full-time p {
+    background-color: #d7ffe0;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 6px 5px;
+}
+
+.container .right-container .right-middle-content .experience .work {
+    height: 35px;
+}
+
+.container .right-container .right-middle-content .experience .work .role {
+    width: 48%;
+}
+
+.container .right-container .right-middle-content .experience .location div {
+    color: #b9bccd;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.container .right-container .right-middle-content .experience .location i {
+    width: 1rem;
+}
+
+.container .right-container .right-bottom-content .education .graduation {
+    padding: 5px 0px;
+    height: 20px;
+}
+
+.container .right-container .right-bottom-content .education .institute div {
+    color: #b9bccd;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.container .right-container .right-bottom-content .education .institute i {
+    width: 1.3rem;
+}
+
+.container .right-container .right-bottom-content .education .institute .icon {
+    width: 40.5%;
+}
+
+.container .right-container .right-bottom-content .education:last-child {
+    border-bottom: none;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .container .left-container {
+        width: 100%;
+    }
+
+    .container .left-container .left-middle-content ul li {
+        font-size: 17px;
+    }
+
+    .container .left-container .left-bottom-content {
+        margin-top: -10%;
+        text-align: center;
+    }
+
+    .container .right-container {
+        width: 100%;
+    }
+
+    .container .right-container .right-middle-content .experience .location .period,
+    .container .right-container .right-bottom-content .education .institute .period {
+        width: 100%;
+    }
+
+    .container .right-container .right-middle-content .experience .work div,
+    .container .right-container .right-bottom-content .education .institute div {
+        display: inline;
+    }
+
+    .container .right-container .right-middle-content .experience .location .company,
+    .container .right-container .right-middle-content .experience .location .place {
+        width: 100%;
+    }
+
+    .container .right-container .right-bottom-content .education .institute .icon {
+        width: 100%;
+    }
+}
