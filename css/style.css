@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe", "Segoe UI", "Arial", "sans-serif";
+}
+
+/*---------------------------- TOP NAV CONTAINER -------------------------------*/
+.container .top-nav-container {
+  background-color: #2564cf;
+  color: white;
+  height: 48px;
+  width: 100%;
+}
+
+.container .top-nav-container div {
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.container .top-nav-container .dots-icon {
+  width: 4%;
+  text-align: center;
+}
+
+.container .top-nav-container .center-top-nav-container {
+  width: 91%;
+}
+
+.container .top-nav-container .login {
+  width: 4%;
+  text-align: center;
+}
+
+.container .top-nav-container .center-top-nav-container div {
+  display: inline-block;
+}
+
+.container .top-nav-container .center-top-nav-container .to-do {
+  width: 12%;
+  text-align: left;
+  font-weight: 600;
+}
+
+.container .top-nav-container .center-top-nav-container .search-bar {
+  width: 69%;
+  text-align: center;
+}
+
+.search {
+  background-color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 24.5rem;
+}
+
+.search i {
+  color: #2564cf;
+  width: 7%;
+  transform: rotate(90deg);
+}
+
+.container .top-nav-container .center-top-nav-container .search-bar #search {
+  border: none;
+  width: 90%;
+  outline: none;
+}
+
+.icon-right {
+  width: 18%;
+  text-align: right;
+}
+
+.icon-right i {
+  width: 19%;
+}
+
+/*---------------------------- BOTTOM NAV CONTAINER -------------------------------*/
+.bottom-nav-container {
+  width: 100%;
+}
+
+.bottom-nav-container div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*---------------------------- LEFT CONTAINER -------------------------------*/
+.left-container {
+  background-color: white;
+  height: 35rem;
+  width: 21%;
+  font-size: 14px;
+}
+
+.left {
+  line-height: 4rem;
+}
+
+.left-container ul {
+  line-height: 3.1;
+  width: 18.5rem;
+}
+
+.left-container ul li {
+  list-style-type: none;
+  padding-left: 26px;
+}
+
+.left-container i {
+  color: black;
+  width: 2.1rem;
+}
+
+.top li:hover {
+  background-color: #faf9f8;
+}
+
+.line {
+  margin: 9px 16px;
+  height: 1px;
+  background-color: #e7e6e5;
+  list-style-type: none;
+}
+
+.new {
+  width: 100%;
+}
+
+.new, .new i {
+  color:#2564cf;
+}
+
+.new div {
+  display: inline-block;
+}
+
+.new-list {
+  width:50%;
+  padding-left: 25px;
+}
+
+.square {
+  text-align: right;
+  width: 28%;
+}
+
+.left-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  text-align: center;
+}
+
+.left-bottom i {
+  width: 3rem;
+}
+
+.left-bottom i:hover {
+  background-color: #faf9f8;
+}
+
+.left-bottom div:last-child {
+  color: #2564cf;
+}
+
+.bar {
+  padding-left: 26px;
+  height: 67px;
+}
+
+/*---------------------------- CENTER CONTAINER -------------------------------*/
+.center-container {
+  background-color: #faf9f8;
+  height: 35rem;
+  width: 78.5%;
+  border-left: 1px solid #e7e6e5;
+  padding-top: 5px;
+}
+
+.content-one {
+  margin: 20px 20px 20px 33px;
+  width: 95%;
+  line-height: 1.5;
+}
+
+.content-two, .content-three {
+  border: 1px solid #e7e6e5;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.content-three {
+  background-color: white;
+  margin-top: 11px;
+}
+
+.top-content {
+  width: 100%;
+}
+
+.top-content li {
+  list-style-type: none;
+}
+
+.top-content-left {
+  width: 70%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.top-content-left i {
+  width: 2rem;
+}
+
+.top-content-right {
+  text-align: right;
+  width: 29%;
+  font-size: 14px;
+  color: #858383;
+  font-weight: 100;
+}
+
+.period {
+  font-size: 12px;
+  color: #858383;
+  font-weight: 100;
+}
+
+.sort, .suggestion {
+  width: 49%;
+}
+
+
+.sort i {
+  transform: rotate(90deg);
+}
+
+
+.top-content-left ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.top-content-right i {
+  font-size: 16px;
+  text-align: center;
+  width: 23%;
+  color: grey;
+}
+
+/* .top-content-right {
+  width: 24%;
+  text-align: right;
+} */
+
+
+.middle-content, .middle-content-one {
+  width: 98%;
+}
+
+.top-content div, .middle-content div, .middle-content-one div, .middle-content-two div {
+  display: inline-block;
+}
+
+.period {
+  width: 100%;
+}
+
+.middle-content {
+  background-color: white;
+  padding: 15px 3.5px 15px 25px;
+  border-bottom: 1px solid #e7e6e5;
+  width: 97.2%;
+}
+
+.middle-content1 {
+  background-color: white;
+  padding: 10px 3.5px 6px 25px;
+  border-bottom: 1px solid #e7e6e5;
+  width: 97.2%;
+}
+
+.circle {
+  width: 3%;
+}
+
+.circle i, .addTask ::placeholder, .star i {
+  color: #2564cf;
+}
+
+.addTask {
+  width: 96%;
+}
+
+#add {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.middle-content-one {
+  padding: 5px 0px 5px 25px;
+}
+
+.new-one {
+  width: 94%;
+  padding-top: 5px;
+}
+
+.new-one div {
+  width: 4%;
+}
+
+.middle-content1 .task {
+  width: 93%;
+}
+
+.middle-content1 .circle, .middle-content1 .star {
+  padding-top: 6px;
+}
+
+.center {
+  width: 96%;
+  margin: 0px 20px 0px 20px;
+}
+
+.new-two {
+  width: 4%;
+}
+
+.new-two button {
+  padding: 7px;
+  background-color: white;
+  border: 1px solid #e7e6e5;
+  color: #a19d9c;
+}
+
+.top-content-right i {
+  margin-right: 8px;
+}
+
