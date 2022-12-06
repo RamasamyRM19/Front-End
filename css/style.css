@@ -147,7 +147,7 @@ body {
 
 .container .bottom-nav-container .left-container .left .new,
 .container .bottom-nav-container .left-container .left .new i {
-  color:#2564cf;
+  color: #2564cf;
 }
 
 .container .bottom-nav-container .left-container .left .new div {
@@ -155,7 +155,7 @@ body {
 }
 
 .container .bottom-nav-container .left-container .left .new .new-list {
-  width:50%;
+  width: 50%;
   padding-left: 25px;
 }
 
@@ -252,7 +252,7 @@ body {
   width: 100%;
 }
 
-.container .bottom-nav-container .center-container .content-one .top-content .top-content-right .sort, 
+.container .bottom-nav-container .center-container .content-one .top-content .top-content-right .sort,
 .container .bottom-nav-container .center-container .content-one .top-content .top-content-right .suggestion {
   width: 40%;
 }
@@ -279,9 +279,9 @@ body {
   width: 98%;
 }
 
-.container .bottom-nav-container .center-container .content-one .top-content div, 
-.container .bottom-nav-container .center-container .center .content-two .middle-content div, 
-.container .bottom-nav-container .center-container .center .content-two .middle-content-one div, 
+.container .bottom-nav-container .center-container .content-one .top-content div,
+.container .bottom-nav-container .center-container .center .content-two .middle-content div,
+.container .bottom-nav-container .center-container .center .content-two .middle-content-one div,
 .container .bottom-nav-container .center-container .center .content-two .middle-content-two div {
   display: inline-block;
 }
@@ -307,7 +307,7 @@ body {
 
 .container .bottom-nav-container .center-container .center .content-two .middle-content .circle i,
 .container .bottom-nav-container .center-container .center .content-three .middle-content1 .circle i,
-.container .bottom-nav-container .center-container .center .content-two .middle-content .addTask ::placeholder, 
+.container .bottom-nav-container .center-container .center .content-two .middle-content .addTask ::placeholder,
 .container .bottom-nav-container .center-container .center .content-three .middle-content1 .star i {
   color: #2564cf;
 }
