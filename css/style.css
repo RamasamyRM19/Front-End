@@ -7,6 +7,10 @@ body {
   font-family: "Segoe", "Segoe UI", "Arial", "sans-serif";
 }
 
+i:hover {
+  cursor: pointer;
+}
+
 /*---------------------------- TOP NAV CONTAINER -------------------------------*/
 .container .top-nav-container {
   background-color: #2564cf;
@@ -180,7 +184,7 @@ body {
   background-color: #faf9f8;
 }
 
-.container .bottom-nav-container .left-container .left-bottom div:last-child {
+.container .bottom-nav-container .left-container .left-bottom .check i {
   color: #2564cf;
 }
 
