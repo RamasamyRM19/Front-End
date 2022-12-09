@@ -107,12 +107,18 @@ i:hover {
   vertical-align: top;
 }
 
+.bar button {
+  border: none;
+  background-color: white;
+}
+
 /*---------------------------- LEFT CONTAINER -------------------------------*/
 .container .bottom-nav-container .left-container {
   background-color: white;
   height: 35rem;
   width: 21%;
   font-size: 14px;
+  overflow-y: auto;
 }
 
 .container .bottom-nav-container .left-container .left {
@@ -121,7 +127,7 @@ i:hover {
 
 .container .bottom-nav-container .left-container ul {
   line-height: 3.1;
-  width: 18.5rem;
+  width: 17.5rem;
 }
 
 .container .bottom-nav-container .left-container ul li {
@@ -143,6 +149,10 @@ i:hover {
   height: 1px;
   background-color: #e7e6e5;
   list-style-type: none;
+}
+
+.new-top {
+  display: none;
 }
 
 .container .bottom-nav-container .left-container .left .new {
@@ -189,14 +199,20 @@ i:hover {
 }
 
 .container .bottom-nav-container .left-container .left .bar {
-  padding-left: 26px;
+  padding-left: 18px;
   height: 67px;
+}
+
+.new-list #add {
+  width: 74%;
+  border: none;
+  outline: none;
 }
 
 /*---------------------------- CENTER CONTAINER -------------------------------*/
 .container .bottom-nav-container .center-container {
   background-color: #faf9f8;
-  height: 35rem;
+  height: 35.5rem;
   width: 78.5%;
   border-left: 1px solid #e7e6e5;
   padding-top: 5px;
@@ -208,6 +224,9 @@ i:hover {
   line-height: 1.7;
 }
 
+.myDay .fa.fa-bars {
+  display: none;
+}
 .container .bottom-nav-container .center-container .center .content-two,
 .container .bottom-nav-container .center-container .center .content-three {
   border: 1px solid #e7e6e5;
@@ -372,7 +391,7 @@ i:hover {
   margin-top: 2rem;
 }
 
-.container .bottom-nav-container .left-container .left .content .top li:first-child {
+.container .bottom-nav-container .left-container .left .content .top li:active {
   border-left: 2px;
   border-left-style: solid;
   border-color: #2564cf;
