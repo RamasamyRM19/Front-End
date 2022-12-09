@@ -49,30 +49,31 @@
       <div class="left-container">
         <div class="left">
           <div class="bar">
-            <i class="fa fa-bars"></i>
+            <button id="bar"><i class="fa fa-bars"></i></button>
           </div>
           <div class="content">
             <ul class="top">
-              <li>
-                <i class="fa fa-sun-o"></i>My Day
+              <li id="MyDay" class="active sideBar-title">
+                <i class="fa fa-sun-o left-category-icon"></i>My Day
               </li>
-              <li>
-                <i class="fa fa-star-o"></i>Important
+              <li class="sideBar-title">
+                <i class="fa fa-star-o left-category-icon"></i>Important
               </li>
-              <li>
-                <i class="fa fa-calendar-o"></i>Planned
+              <li class="sideBar-title">
+                <i class="fa fa-calendar-o left-category-icon"></i>Planned
               </li>
-              <li>
-                <i class='fa fa-user-o'></i>Assigned to me
+              <li class="sideBar-title">
+                <i class='fa fa-user-o left-category-icon'></i>Assigned to me
               </li>
-              <li>
-                <i class="fa fa-home"></i>Tasks
+              <li class="sideBar-title">
+                <i class="fa fa-home left-category-icon"></i>Tasks
               </li>
+              <li class="line"></li>
+              <li class="new-top sideBar-title"><i class="fa fa-list-ul"></i></li>
             </ul>
-            <li class="line"></li>
           </div>
           <div class="new">
-            <div class="new-list"><i class="fa fa-plus"></i>New list</div>
+            <div class="new-list"><i class="fa fa-plus"></i><input id="add" type="text" placeholder="New list"></div>
             <div class="square"><i class="fa fa-plus-square"></i></div>
           </div>
         </div>
@@ -86,12 +87,12 @@
       </div>
 
       <!---------------------------- CENTER CONTAINER ------------------------------->
-      <div class="center-container">
+      <div class="center-container" id="center-container">
         <div class="content-one">
           <div class="top-content">
             <div class="top-content-left">
               <ul>
-                <li><i class="fa fa-sun-o"></i>My Day</li>
+                <li class="myDay"><i class="fa fa-sun-o" id="sun"></i><i class="fa fa-bars"></i>My Day</li>
                 <li><i class="fa fa-ellipsis-h"></i></li>
               </ul>
             </div>
@@ -106,7 +107,7 @@
             </div>
           </div>
           <div class="period">
-            <p>Monday, December 5</p>
+            <p id="period"></p>
           </div>
         </div>
 
@@ -150,6 +151,8 @@
       </div>
     </div>
   </div>
+
+  <script src="../js/script.js" defer></script>
 </body>
 
 </html>
