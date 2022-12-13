@@ -67,11 +67,11 @@ function handleCategoryFocus(e) {
         category.style.fontWeight = "600";
         category.style.paddingLeft = "26px";
 
-        document.querySelector(".sort").style.display="none";
-        document.querySelector(".suggestion").style.display="none";
-        document.querySelector(".period").style.display="none";
-        document.querySelector(".sort").style.color="#2564cf";
-        document.querySelector(".sort i").style.color="#2564cf";
+        document.querySelector(".sort").style.display = "none";
+        document.querySelector(".suggestion").style.display = "none";
+        document.querySelector(".period").style.display = "none";
+        document.querySelector(".sort").style.color = "#2564cf";
+        document.querySelector(".sort i").style.color = "#2564cf";
 
         let middleContent = document.querySelector(".center-container");
         let categoryTitle = middleContent.querySelector(".myDay p");
@@ -82,20 +82,20 @@ function handleCategoryFocus(e) {
         } else if (category.innerText.trim() != "My Day") {
             categoryTitle.style.color = "#2564cf";
             categoryTitleIcon.style.color = "#2564cf";
-            document.querySelector(".sort").style.display="inline-block";
+            document.querySelector(".sort").style.display = "inline-block";
             if (category.innerText.trim() == "Planned") {
-                document.querySelector(".sort").style.display="none";
+                document.querySelector(".sort").style.display = "none";
             }
         } else {
             categoryTitle.style.color = "black";
             categoryTitleIcon.style.color = "black";
-            document.querySelector(".period").style.display="inline";
-            document.querySelector(".sort").style.display="inline-block";
-            document.querySelector(".suggestion").style.display="inline-block";
-            document.querySelector(".sort").style.color="#858383";
-            document.querySelector(".sort i").style.color="#858383";
+            document.querySelector(".period").style.display = "inline";
+            document.querySelector(".sort").style.display = "inline-block";
+            document.querySelector(".suggestion").style.display = "inline-block";
+            document.querySelector(".sort").style.color = "#858383";
+            document.querySelector(".sort i").style.color = "#858383";
         }
-        
+
         document.querySelector("#sun").className = category.querySelector(".left-category-icon").className;
         categoryTitle.innerText = category.innerText;
     }
@@ -104,15 +104,15 @@ function handleCategoryFocus(e) {
 document.getElementById("add").addEventListener("keypress", handleAddButton);
 function handleAddButton(e) {
     if (e.key == "Enter" && e.target.value != "") {
-      let addButton
-        = document.querySelector(".new-two .addBtn");
-      addButton.click();
+        let addButton
+            = document.querySelector(".new-two .addBtn");
+        addButton.click();
     }
-  }
+}
 
 // let categoryTitle = document.querySelector(".sideBar-title").addEventListener("click", handleCategoryFocus, true);
 // function handleCategorySelect(e) {
 //     if (categoryTitle == "My Day") {
-//         icon = 
+//         icon =
 //     }
 // }
