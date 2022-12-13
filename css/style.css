@@ -127,13 +127,17 @@ i:hover {
 .container .bottom-nav-container .left-container ul {
   line-height: 3.1;
   width: 17.5rem;
-  max-height: 12.6rem;
+  max-height: 25rem;
 }
 
 .container .bottom-nav-container .left-container ul li {
   list-style-type: none;
   padding-left: 1.7rem;
   cursor: pointer;
+}
+
+.container .bottom-nav-container .left-container ul li div:hover {
+  background-color: #faf9f8;
 }
 
 .container .bottom-nav-container .left-container i {

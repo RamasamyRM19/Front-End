@@ -56,13 +56,12 @@
               <li class="active sideBar-title">
               </li>
             </ul>
-            <ul>
+            <!-- <ul id="new-top">
               <li class="line"></li>
-              <li class="new-top sideBar-title"></li>
-            </ul>
+            </ul> -->
           </div>
           <div class="new">
-            <div class="new-list"><i class="fa fa-plus"></i><input id="add" type="text" placeholder="New list"></div>
+            <div class="new-list" id="new-list"><i class="fa fa-plus"></i><input id="add" type="text" placeholder="New list"></div>
             <div class="square"><i class="fa fa-plus-square"></i></div>
           </div>
         </div>
@@ -106,8 +105,8 @@
               <div class="circle">
                 <i class="fa fa-circle-thin"></i>
               </div>
-              <div class="addTask">
-                <input id="add" type="text" placeholder="Add a Task">
+              <div class="addTask" id="addTask">
+                <input class="add-task-input" id="add" type="text" placeholder="Add a Task">
               </div>
             </div>
             <div class="middle-content-one">
@@ -122,18 +121,20 @@
             </div>
           </div>
 
+          <!-- <ul class="added-task"></ul> -->
+
           <div class="content-three">
-            <div class="middle-content1">
-              <div class="circle">
+            <!-- <div class="middle-content1" id="middle-content1"> -->
+              <!-- <div class="circle" id="circle">
                 <i class="fa fa-circle-thin"></i>
               </div>
               <div class="task">
-                <p class="new">new</p>
-                <p class="period">Tasks</p>
+                <p class="new" id="new"></p>
+                <p class="period" id="desc"></p>
               </div>
-              <div class="star">
+              <div class="star" id="star">
                 <i class="fa fa-star-o"></i>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
