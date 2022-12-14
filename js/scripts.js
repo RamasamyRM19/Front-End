@@ -32,139 +32,141 @@
 
     var leftContainerBarIcon = document.getElementById("bar");
     var leftContainer = document.getElementsByClassName("left-container")[0];
-    var categoryItem = document.getElementsByClassName("sideBar-title");
+    var categoryItem = document.getElementById("sideBar-title");
     var centerContainerBarIcon = document.getElementById("sun");
     var centerContainer = document.getElementsByClassName("center-container")[0];
     var hiddenLeftContainer = document.getElementsByClassName('hide-left-container');
     var inputBox = document.getElementsByClassName("new-top");
     var input = document.getElementById("new-list");
     var contents = document.getElementById("addTask");
-    var newTask = document.getElementsByClassName('content-three')[0];
+    var newTasks = document.getElementsByClassName('content-three')[0];
+    var topLeft = document.getElementById("top");
+    var menuLists = topLeft.getElementsByTagName('li');
+    var head = document.getElementsByClassName("myDay");
+    var selectedCategory;
 
+    /**
+     * 
+     */
     function init() {
         showDate();
         renderCategory();
         eventListener();
     }
 
+    /**
+     * 
+     */
     function showDate() {
         let now = new Date().toLocaleDateString('en-us', { weekday: "long", month: "long", day: "numeric" });
         document.querySelector("#period").innerText = now;
     }
 
+    /**
+     * 
+     */
     function eventListener() {
         leftContainerBarIcon.addEventListener('click', toggleScreenView);
         centerContainerBarIcon.addEventListener('click', toggleScreenView);
         input.addEventListener("keypress", addList);
         contents.addEventListener("keypress", addTask);
+        topLeft.addEventListener("click", handleSelectedList, true);
     }
 
+    /**
+     * 
+     */
     function toggleScreenView() {
-        if (hiddenLeftContainer == null) {
-            leftContainer.classList.remove("hide-left-container");
-            centerContainer.classList.remove("full-screen-view");
-        } else {
-            leftContainer.classList.add("hide-left-container");
-            centerContainer.classList.add("full-screen-view");
-        }
+        leftContainer.classList.toggle("hide-left-container");
+        centerContainer.classList.toggle("full-screen-view");
     }
 
+    /**
+     * 
+     */
     function renderCategory() {
         category.forEach(element => {
-            var categoryList = document.createElement("li");
-            var categoryIcon = document.createElement("i");
+            var categoryList = createTag("li", {});
+            var categoryIcon = createTag("i", {});
             categoryIcon.className = element.icon;
             categoryList.append(categoryIcon);
             categoryList.append(element.name);
-            document.getElementById("top").append(categoryList);
-            //document.getElementById("top").append();
+            topLeft.append(categoryList);
         });
+        var newLine = createTag("li", { className: "line" });
+        topLeft.append(newLine);
     }
 
+    /**
+     * 
+     * @param {*} event 
+     */
     function addList(event) {
         if (event.keyCode == 13 && event.target.value != "") {
-            console.log(event.target.value);
-            var newList = document.createElement("div");
-            var newIcon = document.createElement("i");
-            newIcon.className = "fa fa-list-ul";
-            newList.innerText = event.target.value;
+            var newList = createTag("li", {});
+            var newIcon = createTag("i", { className: "fa fa-list-ul" });
+            newList.append(newIcon);
+            newList.append(event.target.value);
+            topLeft.append(newList);
             event.target.value = "";
-            //newList.append(newIcon);
-            //document.getElementsByClassName(".new-top").style.display = "inline-block";
-            document.getElementById("top").append(newIcon);
-            document.getElementById("top").append(newList);
-            document.getElementById("top").append(document.createElement("br"));
         }
     }
 
-    // function newAddedTask() {
-    //     while (newTask.firstChild) {
-    //         newTask.removeChild(newTask.firstChild);
-    //     }
-    //     addTask();
-    // }
-
+    /**
+     * 
+     * @param {*} event 
+     */
     function addTask(event) {
         if (event.keyCode == 13 && event.target.value != "") {
-            console.log(event.target.value);
-
-            var newCategoryList = document.createElement("div");
-            newCategoryList.className = "middle-content1";
-            var newList = document.createElement("div");
-            newList.className = "circle";
-            var newIcon = document.createElement("i");
-            newIcon.className = "fa fa-circle-thin";
+            var newCategoryList = createTag("div", { className: "middle-content1" });
+            var newList = createTag("div", { className: "circle" });
+            var newIcon = createTag("i", { className: "fa fa-circle-thin" });
             newList.append(newIcon);
 
-            var newTask = document.createElement("div");
-            newTask.className = "task";
-            var newP = document.createElement("p");
-            newP.className = "new";
-            var newP1 = document.createElement("p");
-            newP1.className = "period";
+            var newTask = createTag("div", { className: "task" });
+            var newP = createTag("p", { className: "new" });
+            var newP1 = createTag("p", { className: "period" });
             newP.innerText = event.target.value;
             newP1.innerText = "Tasks";
             newTask.append(newP);
             newTask.append(newP1);
 
-            var newList1 = document.createElement("div");
-            newList1.className = "star";
-            var newIcon1 = document.createElement("i");
-            newIcon1.className = "fa fa-star-o";
+            var newList1 = createTag("div", { className: "star" });
+            var newIcon1 = createTag("i", { className: "fa fa-star-o" });
             event.target.value = "";
             newList1.append(newIcon1);
 
             newCategoryList.append(newList);
             newCategoryList.append(newTask);
             newCategoryList.append(newList1);
-            //newTask.appendChild(newCategoryList);
+            newTasks.appendChild(newCategoryList);
 
-            // document.getElementById("middle-content1").style.display = "inline-block";
-            // document.getElementById("circle").append(newIcon);
-            // document.getElementById("middle-content1").append(newList);
-
-            // document.getElementById("new").append(newP);
-            // document.getElementById("desc").append(newP1);
-            // document.getElementById("middle-content1").append(newTask);
-
-            // document.getElementById("star").append(newIcon1);
-            // document.getElementById("middle-content1").append(document.createElement("br"));
         }
     }
 
+    /**
+     * 
+     * @param {*} element 
+     * @param {*} parameters 
+     * @returns 
+     */
+    function createTag(element, parameters) {
+        var newElement = document.createElement(element);
+        if (parameters.className !== undefined) {
+            newElement.className = parameters.className;
+        }
+        if (parameters.content !== undefined) {
+            newElement.innerText = parameters.content;
+        }
+        return newElement;
+    }
 
-    // function addTask(e) {
-    //     if (e.key === "Enter" && newTaskInputBar.value !== "") {
-    //         let taskDetails = {
-    //             id: tasks.length + 1,
-    //             name: newTaskInputBar.value,
-    //             category: [title.innerHTML, title.innerHTML == "Tasks"? "":"Tasks"]
-    //         }
-    //         tasks.push(taskDetails);
-    //         newTaskInputBar.value = "";
-    //         refreshTaskList();
-    //     }
-    // }
+    function handleSelectedList(event) {
+        let menuCategories = topLeft.getElementsByTagName("li");
+        let categories = event.target;
+        selectedCategory = categories;
+        head[0].innerText = categories.innerText;
+    }
 
     init();
 

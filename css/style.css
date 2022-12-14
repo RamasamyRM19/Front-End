@@ -7,7 +7,7 @@ body {
   font-family: "Segoe", "Segoe UI", "Arial", "sans-serif";
 }
 
-i:hover {
+i:hover, button:hover {
   cursor: pointer;
 }
 
@@ -149,12 +149,13 @@ i:hover {
   overflow-y: auto;
 }
 
-.container .bottom-nav-container .left-container .left .content .top {
+
+/* .container .bottom-nav-container .left-container .left .content .top {
   padding-bottom: 1rem;
-}
+} */
 
 .container .bottom-nav-container .left-container .left .content .top li:hover {
-  background-color: #faf9f8;
+  background-color: #f3f0ef;
 }
 
 .container .bottom-nav-container .left-container .left .content .line {
@@ -162,10 +163,6 @@ i:hover {
   height: 1px;
   background-color: #e7e6e5;
   list-style-type: none;
-}
-
-.new-top {
-  display: none;
 }
 
 .container .bottom-nav-container .left-container .left .new {
@@ -231,6 +228,14 @@ i:hover {
   border-left-style: solid;
   border-color: #2564cf;
   background-color: rgb(235, 247, 252);
+}
+
+.container .bottom-nav-container .left-container .left .content .top-side-bar {
+  background-color : "#ecf6fd";
+  border-left : "2px solid #2564cf";
+  font-weight : "600";
+  padding-left : "26px";
+
 }
 
 .container .bottom-nav-container .hide-left-container {
@@ -418,3 +423,4 @@ i:hover {
 .container .bottom-nav-container .full-screen-view {
   width: 99.9vw;
 }
+
