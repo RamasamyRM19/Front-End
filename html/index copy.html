@@ -18,7 +18,7 @@
 
     <!---------------------------- TOP NAV CONTAINER ------------------------------->
     <div class="top-nav-container">
-      <div class="dots-icon">
+      <div class="dots-icon" title="App Launcher">
         <i class="fa fa-ellipsis-v"></i>
         <i class="fa fa-ellipsis-v"></i>
         <i class="fa fa-ellipsis-v"></i>
@@ -27,19 +27,19 @@
         <div class="to-do">
           <p>To Do</p>
         </div>
-        <div class="search-bar">
+        <div class="search-bar" title="search">
           <div class="search">
             <i class="fa fa-search"></i>
             <input id="search" type="text">
           </div>
         </div>
         <div class="icon-right">
-          <i class="fa fa-cog"></i>
-          <i class="fa fa-question"></i>
-          <i class="fa fa-bullhorn"></i>
+          <i class="fa fa-cog" title="Settings"></i>
+          <i class="fa fa-question" title="Help & feedback"></i>
+          <i class="fa fa-bullhorn" title="What's new"></i>
         </div>
       </div>
-      <div class="login">
+      <div class="login" title="Account Manager">
         <i class='fa fa-user-circle'></i>
       </div>
     </div>
@@ -51,9 +51,9 @@
           <div class="bar">
             <button id="bar"><i class="fa fa-bars"></i></button>
           </div>
-          <div class="content">
-            <ul class="top" id="top">
-              <li class="active sideBar-title">
+          <div class="default content">
+            <ul class="default top" id="top">
+              <li class="active sideBar-title" id="sideBar-title">
               </li>
             </ul>
             <!-- <ul id="new-top">
@@ -81,15 +81,15 @@
             <div class="top-content-left">
               <ul>
                 <li class="myDay"><i class="fa fa-sun-o" id="sun"></i><i class="fa fa-bars"></i>My Day</li>
-                <li><i class="fa fa-ellipsis-h"></i></li>
+                <li title="List options menu"><i class="fa fa-ellipsis-h"></i></li>
               </ul>
             </div>
             <div class="top-content-right">
-              <div class="sort">
+              <div class="sort" title="Sort">
                 <i class="fa-solid fa-arrow-right-arrow-left"></i>Sort
               </div>
 
-              <div class="suggestion">
+              <div class="suggestion" title="Suggestion">
                 <i class="fa-regular fa-lightbulb"></i>Suggestions
               </div>
             </div>
@@ -135,7 +135,7 @@
               <div class="star" id="star">
                 <i class="fa fa-star-o"></i>
               </div> -->
-            </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>
