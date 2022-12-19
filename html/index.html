@@ -18,7 +18,7 @@
 
     <!---------------------------- TOP NAV CONTAINER ------------------------------->
     <div class="top-nav-container">
-      <div class="dots-icon">
+      <div class="dots-icon" title="App Launcher">
         <i class="fa fa-ellipsis-v"></i>
         <i class="fa fa-ellipsis-v"></i>
         <i class="fa fa-ellipsis-v"></i>
@@ -27,19 +27,19 @@
         <div class="to-do">
           <p>To Do</p>
         </div>
-        <div class="search-bar">
+        <div class="search-bar" title="search">
           <div class="search">
             <i class="fa fa-search"></i>
             <input id="search" type="text">
           </div>
         </div>
         <div class="icon-right">
-          <i class="fa fa-cog"></i>
-          <i class="fa fa-question"></i>
-          <i class="fa fa-bullhorn"></i>
+          <i class="fa fa-cog" title="Settings"></i>
+          <i class="fa fa-question" title="Help & feedback"></i>
+          <i class="fa fa-bullhorn" title="What's new"></i>
         </div>
       </div>
-      <div class="login">
+      <div class="login" title="Account Manager">
         <i class='fa fa-user-circle'></i>
       </div>
     </div>
@@ -51,38 +51,21 @@
           <div class="bar">
             <button id="bar"><i class="fa fa-bars"></i></button>
           </div>
-          <div class="content">
-            <ul class="top">
-              <li id="MyDay" class="active sideBar-title">
-                <i class="fa fa-sun-o left-category-icon"></i>My Day
-              </li>
-              <li id="important" class="sideBar-title">
-                <i class="fa fa-star-o left-category-icon"></i>Important
-              </li>
-              <li class="sideBar-title">
-                <i class="fa fa-calendar-o left-category-icon"></i>Planned
-              </li>
-              <li class="sideBar-title">
-                <i class='fa fa-user-o left-category-icon'></i>Assigned to me
-              </li>
-              <li class="sideBar-title">
-                <i class="fa fa-home left-category-icon"></i>Tasks
-              </li>
-              <li class="line"></li>
-              <li class="new-top sideBar-title"></li>
+          <div class="default content">
+            <ul class="default top" id="top">
             </ul>
           </div>
           <div class="new">
-            <div class="new-list"><i class="fa fa-plus"></i><input id="add" type="text" placeholder="New list"></div>
+            <div class="new-list" id="new-list"><i class="fa fa-plus"></i><input id="add" type="text" placeholder="New list"></div>
             <div class="square"><i class="fa fa-plus-square"></i></div>
           </div>
         </div>
         <div class="left-bottom">
-          <div><i class="fa fa-envelope"></i></div>
-          <div><i class="fa fa-calendar-o"></i></div>
-          <div><i class="fa-solid fa-user-group"></i></div>
-          <div><i class="fa fa-paperclip"></i></div>
-          <div class="check"><i class="fa fa-check"></i></div>
+          <div><i class="fa fa-envelope" title="Mail"></i></div>
+          <div><i class="fa fa-calendar-o" title="Calendar"></i></div>
+          <div><i class="fa-solid fa-user-group" title="People"></i></div>
+          <div><i class="fa fa-paperclip" title="Files"></i></div>
+          <div class="check"><i class="fa fa-check" title="To Do"></i></div>
         </div>
       </div>
 
@@ -92,16 +75,17 @@
           <div class="top-content">
             <div class="top-content-left">
               <ul>
-                <li class="myDay"><i class="fa fa-sun-o" id="sun"></i><i class="fa fa-bars"></i><p>My Day</p></li>
-                <li><i class="fa fa-ellipsis-h"></i></li>
+                <i class="fa fa-sun-o" id="sun"></i>
+                <li class="myDay" id="myDay">My Day</li>
+                <li title="List options menu"><i class="fa fa-ellipsis-h"></i></li>
               </ul>
             </div>
             <div class="top-content-right">
-              <div class="sort">
+              <div class="sort" title="Sort">
                 <i class="fa-solid fa-arrow-right-arrow-left"></i>Sort
               </div>
 
-              <div class="suggestion">
+              <div class="suggestion" title="Suggestion" id="suggestion">
                 <i class="fa-regular fa-lightbulb"></i>Suggestions
               </div>
             </div>
@@ -112,13 +96,13 @@
         </div>
 
         <div class="center">
-          <div class="content-two">
+          <div class="content-two" id="content-two">
             <div class="middle-content">
               <div class="circle">
                 <i class="fa fa-circle-thin"></i>
               </div>
-              <div class="addTask">
-                <input id="add" type="text" placeholder="Add a Task">
+              <div class="addTask" id="addTask">
+                <input class="add-task-input" id="addCategory" type="text" placeholder="Add a Task">
               </div>
             </div>
             <div class="middle-content-one">
@@ -133,21 +117,104 @@
             </div>
           </div>
 
-          <div class="content-three">
-            <div class="middle-content1">
-              <div class="circle">
-                <i class="fa fa-circle-thin"></i>
-              </div>
-              <div class="task">
-                <p class="new">new</p>
-                <p class="period">Tasks</p>
-              </div>
-              <div class="star">
-                <i class="fa fa-star-o"></i>
-              </div>
-            </div>
+          <div class="content-three" id="content-three">
+          </div>
+
+          <div class="completed-title-container" id="completed-title-container">
+            <i class="fa fa-angle-right"></i>
+            <p class="completed-title">Completed</p>
+          </div>
+  
+          <ul class="completed items" id="completed-items">
+          </ul>
+
+        </div>
+      </div>
+
+
+      <!---------------------------- RIGHT CONTAINER ------------------------------->
+      <div class="right-container" id="right-container">
+        <div class="section task-title">
+          <div class="section-icon">
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="section-name" id="title-content">
+          </div>
+          <div class="section-icon">
+            <i class="fa-regular fa-star"></i>
           </div>
         </div>
+
+        <div class="middle-sections">
+          <div class="section">
+            <div class="section-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="section-name">
+              Add step
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-icon">
+              <i class="fa-regular fa-sun"></i>
+            </div>
+            <div class="section-name">Added to My Day</div>
+          </div>
+
+          <div class="conditions-section">
+            <div class="section">
+              <div class="section-icon">
+                <i class="fa-regular fa-bell"></i>
+              </div>
+              <div class="section-name">Remind me</div>
+            </div>
+            <div class="section">
+              <div class="section-icon">
+                <i class="left-bottom-icon fa-regular fa-calendar-days"></i>
+              </div>
+              <div class="section-name">Add due date</div>
+            </div>
+            <div class="section">
+              <div class="section-icon">
+                <i class="fa-solid fa-repeat"></i>
+              </div>
+              <div class="section-name">Repeat</div>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-icon">
+              <i class="fa-solid fa-tag"></i>
+            </div>
+            <div class="section-name">Pick a category</div>
+          </div>
+
+          <div class="section">
+            <div class="section-icon">
+              <i class="fa-solid fa-paperclip"></i>
+            </div>
+            <div class="section-name">Add file</div>
+          </div>
+
+          <div class="section">
+            <textarea name="note" id="note" class="note-input" placeholder="Add note"></textarea>
+          </div>
+        </div>
+
+        <li class="line"></li>
+
+        <div class="bottom-section">
+          <div class="section-icon">
+            <i class="fa-solid fa-right-from-bracket" id="exit-icon"></i>
+          </div>
+          <div class="section-name">
+          </div>
+          <div class="section-icon">
+            <i class="fa-solid fa-trash"></i>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
