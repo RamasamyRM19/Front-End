@@ -7,7 +7,8 @@ body {
   font-family: "Segoe", "Segoe UI", "Arial", "sans-serif";
 }
 
-i:hover, button:hover {
+i:hover,
+button:hover {
   cursor: pointer;
 }
 
@@ -107,11 +108,6 @@ i:hover, button:hover {
   vertical-align: top;
 }
 
-.bar button {
-  border: none;
-  background-color: white;
-}
-
 /*---------------------------- LEFT CONTAINER -------------------------------*/
 .container .bottom-nav-container .left-container {
   background-color: white;
@@ -120,12 +116,17 @@ i:hover, button:hover {
   font-size: 14px;
 }
 
-.left-container.hide-block {
+.container .bottom-nav-container .left-container.hide-block {
   display: none;
 }
 
 .container .bottom-nav-container .left-container .left {
   line-height: 4rem;
+}
+
+.container .bottom-nav-container .left-container .left .bar button {
+  border: none;
+  background-color: white;
 }
 
 .container .bottom-nav-container .left-container ul {
@@ -236,10 +237,10 @@ i:hover, button:hover {
 }
 
 .container .bottom-nav-container .left-container .left .content .top-side-bar {
-  background-color : "#ecf6fd";
-  border-left : "2px solid #2564cf";
-  font-weight : "600";
-  padding-left : "26px";
+  background-color: "#ecf6fd";
+  border-left: "2px solid #2564cf";
+  font-weight: "600";
+  padding-left: "26px";
 
 }
 
@@ -265,6 +266,7 @@ i:hover, button:hover {
 .myDay .fa.fa-bars {
   display: none;
 }
+
 .container .bottom-nav-container .center-container .center .content-two,
 .container .bottom-nav-container .center-container .center .content-three {
   border: 1px solid #e7e6e5;
@@ -316,6 +318,7 @@ i:hover, button:hover {
 .container .bottom-nav-container .center-container .content-one .top-content .top-content-right .sort,
 .container .bottom-nav-container .center-container .content-one .top-content .top-content-right .suggestion {
   width: 40%;
+  cursor: pointer;
 }
 
 .container .bottom-nav-container .center-container .content-one .top-content .top-content-right .sort i {
@@ -393,7 +396,7 @@ i:hover, button:hover {
 }
 
 .container .bottom-nav-container .center-container .center .content-two .middle-content-one .new-one div {
-  width: 3.5%;
+  width: 4.5%;
 }
 
 .container .bottom-nav-container .center-container .center .content-three .middle-content1 .task {
@@ -429,127 +432,196 @@ i:hover, button:hover {
   width: 99.9vw;
 }
 
-
-.center-container .center .completed-title-container {
+.container .bottom-nav-container .center-container .center .completed-title-container {
   display: block;
   line-height: 2;
   border-bottom: 0.1px solid #dedede;
   margin-left: 0.5rem;
 }
 
-.center-container .center .completed-title-container.hide-block {
+.container .bottom-nav-container .center-container .center .completed-title-container.hide-block {
   display: none;
 }
 
-.center-container .center .completed-title-container .completed-title {
+.container .bottom-nav-container .center-container .center .completed-title-container .completed-title {
   display: inline-block;
   margin: 0 10px;
   font-weight: 600;
   font-size: 14px;
 }
 
-.center-container .center .completed-title-container i {
+.container .bottom-nav-container .center-container .center .completed-title-container i {
   text-align: center;
   width: 20px;
   pointer-events: none;
 }
 
-.center-container .center .completed.items {
+.container .bottom-nav-container .center-container .center .completed.items {
   display: block;
 }
 
-.center-container .center .completed.items.hide-block {
+.container .bottom-nav-container .center-container .center .completed.items.hide-block {
   display: none;
 }
 
-.right-container {
-  display: inline-block;
+.container .bottom-nav-container .center-container1 {
+  width: 52%;
+}
+
+.container .bottom-nav-container .center-container1 .content-one .top-content .top-content-right .sort,
+.container .bottom-nav-container .center-container1 .content-one .top-content .top-content-right .suggestion {
+  width: 49%;
+}
+
+.container .bottom-nav-container .center-container1 .center .content-two .middle-content {
+  width: 95.7%;
+}
+
+.container .bottom-nav-container .center-container1 .center .content-two .middle-content-one .new-one {
+  width: 89.5%;
+}
+
+.container .bottom-nav-container .center-container1 .center .content-three .middle-content1 .circle {
+  width: 5%;
+}
+
+.container .bottom-nav-container .center-container1 .center .content-three .middle-content1 {
+  width: 95.2%;
+}
+
+.container .bottom-nav-container .center-container1 .center .content-three .middle-content1 .task {
+  width: 92%;
+}
+
+.container .bottom-nav-container .center-container1 .center .content-two .middle-content .circle {
+  width: 4%;
+}
+
+.container .bottom-nav-container .center-container1 .center .content-two .middle-content .addTask {
+  width: 93%;
+}
+
+/*---------------------------- RIGHT CONTAINER -------------------------------*/
+.container .bottom-nav-container .right-container {
+  display: none;
   background-color: #f7f7f7;
   width: 28.5%;
-  height: 100%;
+  height: 36rem;
   border-left: 0.5px solid #d0cbcb;
   box-shadow: -4px 5px 20px -7px #cccccc;
   vertical-align: top;
-  overflow: auto;
 }
 
-.right-container::-webkit-scrollbar {
-  width: 4px;
+.container .bottom-nav-container .right-container .middle-sections {
+  overflow-y: auto;
+  max-height: 27rem;
+  color: #6e6868;
+  font-size: 14px;
 }
 
-.right-container.show-block {
+.container .bottom-nav-container .right-container.show-block {
   display: inline-block;
+  width: 26%;
 }
 
-.right-container .section {
+.task-title i {
+  color: #2564cf;
+}
+
+.container .bottom-nav-container .right-container .section {
   line-height: 3.3;
   background-color: white;
   width: 85%;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 10px 1.7rem;
+  border-radius: 4px;
 }
 
-.right-container .bottom-section {
+.container .bottom-nav-container .right-container .bottom-section {
   background-color: #f7f7f7;
-  position: sticky;
   bottom: 0;
   line-height: 3.5;
   text-align: center;
-  width: 85%;
+  width: 90%;
+  margin: 0 auto 0px 1rem;
 }
 
-.right-container .bottom-section div {
+.container .bottom-nav-container .right-container .bottom-section div {
   display: inline-block;
 }
 
-.right-container .middle-sections {
-  overflow: auto;
-}
-
-.right-container .section.task-title:first-child {
+.container .bottom-nav-container .right-container .section.task-title:first-child {
   margin-top: 10px;
   margin-bottom: 0;
   position: sticky;
   top: 10px;
+  width: 18rem;
 }
 
-.right-container .section div {
+.container .bottom-nav-container .right-container .section div {
   display: inline-block;
 }
 
-.right-container ul {
+.container .bottom-nav-container .right-container ul {
   list-style: none;
 }
 
-.right-container ul.section li {
+.container .bottom-nav-container .right-container ul.section li {
   border-bottom: 0.5px solid #d0cbcb;
 }
 
-.right-container ul.section li:last-child {
+.container .bottom-nav-container .right-container ul.section li:last-child {
   border-bottom: none;
 }
 
-.right-container .section-icon {
+.container .bottom-nav-container .right-container .section-icon {
   width: 15%;
   text-align: center;
 }
 
-.right-container .section-name {
+.container .bottom-nav-container .right-container .section-name {
   width: 83%;
 }
 
-.right-container .section.section.task-title .section-name, 
-.right-container .bottom-section .section-name {
-  width: 67%;
+.container .bottom-nav-container .right-container .section.section.task-title .section-name,
+.container .bottom-nav-container .right-container .bottom-section .section-name {
+  width: 66%;
 }
 
-.right-container .section .note-input {
+.container .bottom-nav-container .right-container .section .note-input {
   border: none;
   outline: none;
-  width: 89%;
+  width: 100%;
   resize: none;
+  height: 7rem;
   font-size: 16px;
 }
 
-.right-container1 {
-  display: none;
+.container .bottom-nav-container .right-container .middle-sections .conditions-section {
+  background-color: #fff;
+  width: 85%;
+  margin: 0 auto 10px 1.7rem;
+  border-radius: 4px;
+}
+
+.container .bottom-nav-container .right-container .middle-sections .conditions-section .section {
+  margin: 0 auto 0px 0rem;
+  padding-right: 2.65rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.container .bottom-nav-container .right-container .section:hover,
+.container .bottom-nav-container .right-container .conditions-section div:hover {
+  background-color: #dedede;
+  cursor: pointer;
+}
+
+.container .bottom-nav-container .right-container .line {
+  margin: 9px 16px;
+  height: 1px;
+  background-color: #e7e6e5;
+  list-style-type: none;
+}
+
+.container .bottom-nav-container .right-container .middle-sections .section:last-child {
+  height: 7rem;
 }
