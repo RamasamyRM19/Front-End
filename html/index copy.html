@@ -76,7 +76,7 @@
             <div class="top-content-left">
               <ul>
                 <i class="fa fa-sun-o" id="sun"></i>
-                <li class="myDay">My Day</li>
+                <li class="myDay" id="myDay">My Day</li>
                 <li title="List options menu"><i class="fa fa-ellipsis-h"></i></li>
               </ul>
             </div>
@@ -85,7 +85,7 @@
                 <i class="fa-solid fa-arrow-right-arrow-left"></i>Sort
               </div>
 
-              <div class="suggestion" title="Suggestion">
+              <div class="suggestion" title="Suggestion" id="suggestion">
                 <i class="fa-regular fa-lightbulb"></i>Suggestions
               </div>
             </div>
@@ -133,12 +133,12 @@
 
 
       <!---------------------------- RIGHT CONTAINER ------------------------------->
-      <div class="right-container1" id="right-container">
+      <div class="right-container" id="right-container">
         <div class="section task-title">
           <div class="section-icon">
             <i class="fa-regular fa-circle"></i>
           </div>
-          <div class="section-name">
+          <div class="section-name" id="title-content">
           </div>
           <div class="section-icon">
             <i class="fa-regular fa-star"></i>
@@ -146,6 +146,14 @@
         </div>
 
         <div class="middle-sections">
+          <div class="section">
+            <div class="section-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="section-name">
+              Add step
+            </div>
+          </div>
 
           <div class="section">
             <div class="section-icon">
@@ -154,7 +162,7 @@
             <div class="section-name">Added to My Day</div>
           </div>
 
-          <div class="conditions-section section">
+          <div class="conditions-section">
             <div class="section">
               <div class="section-icon">
                 <i class="fa-regular fa-bell"></i>
@@ -192,8 +200,9 @@
           <div class="section">
             <textarea name="note" id="note" class="note-input" placeholder="Add note"></textarea>
           </div>
-
         </div>
+
+        <li class="line"></li>
 
         <div class="bottom-section">
           <div class="section-icon">
