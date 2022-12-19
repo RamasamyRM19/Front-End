@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="StyleSheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/aff2218056.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <!---------------------------- TOP NAV CONTAINER ------------------------------->
+    <div class="top-nav-container">
+      <div class="dots-icon" title="App Launcher">
+        <i class="fa fa-ellipsis-v"></i>
+        <i class="fa fa-ellipsis-v"></i>
+        <i class="fa fa-ellipsis-v"></i>
+      </div>
+      <div class="center-top-nav-container">
+        <div class="to-do">
+          <p>To Do</p>
+        </div>
+        <div class="search-bar" title="search">
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input id="search" type="text">
+          </div>
+        </div>
+        <div class="icon-right">
+          <i class="fa fa-cog" title="Settings"></i>
+          <i class="fa fa-question" title="Help & feedback"></i>
+          <i class="fa fa-bullhorn" title="What's new"></i>
+        </div>
+      </div>
+      <div class="login" title="Account Manager">
+        <i class='fa fa-user-circle'></i>
+      </div>
+    </div>
+
+    <!---------------------------- BOTTOM NAV CONTAINER ------------------------------->
+    <div class="bottom-nav-container">
+      <div class="left-container">
+        <div class="left">
+          <div class="bar">
+            <button id="bar"><i class="fa fa-bars"></i></button>
+          </div>
+          <div class="default content">
+            <ul class="default top" id="top">
+            </ul>
+          </div>
+          <div class="new">
+            <div class="new-list" id="new-list"><i class="fa fa-plus"></i><input id="add" type="text" placeholder="New list"></div>
+            <div class="square"><i class="fa fa-plus-square"></i></div>
+          </div>
+        </div>
+        <div class="left-bottom">
+          <div><i class="fa fa-envelope" title="Mail"></i></div>
+          <div><i class="fa fa-calendar-o" title="Calendar"></i></div>
+          <div><i class="fa-solid fa-user-group" title="People"></i></div>
+          <div><i class="fa fa-paperclip" title="Files"></i></div>
+          <div class="check"><i class="fa fa-check" title="To Do"></i></div>
+        </div>
+      </div>
+
+      <!---------------------------- CENTER CONTAINER ------------------------------->
+      <div class="center-container" id="center-container">
+        <div class="content-one">
+          <div class="top-content">
+            <div class="top-content-left">
+              <ul>
+                <i class="fa fa-sun-o" id="sun"></i>
+                <li class="myDay" id="myDay">My Day</li>
+                <li title="List options menu"><i class="fa fa-ellipsis-h"></i></li>
+              </ul>
+            </div>
+            <div class="top-content-right">
+              <div class="sort" title="Sort">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>Sort
+              </div>
+
+              <div class="suggestion" title="Suggestion" id="suggestion">
+                <i class="fa-regular fa-lightbulb"></i>Suggestions
+              </div>
+            </div>
+          </div>
+          <div class="period">
+            <p id="period"></p>
+          </div>
+        </div>
+
+        <div class="center">
+          <div class="content-two" id="content-two">
+            <div class="middle-content">
+              <div class="circle">
+                <i class="fa fa-circle-thin"></i>
+              </div>
+              <div class="addTask" id="addTask">
+                <input class="add-task-input" id="addCategory" type="text" placeholder="Add a Task">
+              </div>
+            </div>
+            <div class="middle-content-one">
+              <div class="new-one">
+                <div><i class="fa fa-calendar-o"></i></div>
+                <div><i class="fa fa-bell-o"></i></div>
+                <div><i class="fa-solid fa-repeat"></i></div>
+              </div>
+              <div class="new-two">
+                <button class="addBtn">Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-three" id="content-three">
+          </div>
+
+          <div class="completed-title-container" id="completed-title-container">
+            <i class="fa fa-angle-right"></i>
+            <p class="completed-title">Completed</p>
+          </div>
+  
+          <ul class="completed items" id="completed-items">
+          </ul>
+
+        </div>
+      </div>
+
+
+      <!---------------------------- RIGHT CONTAINER ------------------------------->
+      <div class="right-container" id="right-container">
+        <div class="section task-title">
+          <div class="section-icon">
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="section-name" id="title-content">
+          </div>
+          <div class="section-icon">
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+
+        <div class="middle-sections">
+          <div class="section">
+            <div class="section-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="section-name">
+              Add step
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-icon">
+              <i class="fa-regular fa-sun"></i>
+            </div>
+            <div class="section-name">Added to My Day</div>
+          </div>
+
+          <div class="conditions-section">
+            <div class="section">
+              <div class="section-icon">
+                <i class="fa-regular fa-bell"></i>
+              </div>
+              <div class="section-name">Remind me</div>
+            </div>
+            <div class="section">
+              <div class="section-icon">
+                <i class="left-bottom-icon fa-regular fa-calendar-days"></i>
+              </div>
+              <div class="section-name">Add due date</div>
+            </div>
+            <div class="section">
+              <div class="section-icon">
+                <i class="fa-solid fa-repeat"></i>
+              </div>
+              <div class="section-name">Repeat</div>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-icon">
+              <i class="fa-solid fa-tag"></i>
+            </div>
+            <div class="section-name">Pick a category</div>
+          </div>
+
+          <div class="section">
+            <div class="section-icon">
+              <i class="fa-solid fa-paperclip"></i>
+            </div>
+            <div class="section-name">Add file</div>
+          </div>
+
+          <div class="section">
+            <textarea name="note" id="note" class="note-input" placeholder="Add note"></textarea>
+          </div>
+        </div>
+
+        <li class="line"></li>
+
+        <div class="bottom-section">
+          <div class="section-icon">
+            <i class="fa-solid fa-right-from-bracket" id="exit-icon"></i>
+          </div>
+          <div class="section-name">
+          </div>
+          <div class="section-icon">
+            <i class="fa-solid fa-trash"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/scripts.js" defer></script>
+</body>
+
+</html>
