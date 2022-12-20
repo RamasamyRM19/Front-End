@@ -501,6 +501,10 @@ button:hover {
   width: 93%;
 }
 
+.striked-task {
+  text-decoration: line-through;
+}
+
 /*---------------------------- RIGHT CONTAINER -------------------------------*/
 .container .bottom-nav-container .right-container {
   display: none;
